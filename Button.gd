@@ -18,4 +18,4 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene(scene_to_load)
+	get_tree().change_scene("res://TheGrandHeist.tscn")
