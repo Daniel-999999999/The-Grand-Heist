@@ -1,8 +1,8 @@
 extends KinematicBody
 
 #mainPhysics
-var movementSpeed = 1.0
-var jumpStrength = 1.0
+var movementSpeed = 4
+var jumpStrength = 2.5
 var gravity = 9.8
 
 #camera
@@ -36,13 +36,13 @@ func _physics_process (delta):
 	playerVelocity.z = 0
 	var input = Vector2()
 	if Input.is_action_pressed("player_forward"):
-		input.y -= 1
+		input.y -= 2.5
 	if Input.is_action_pressed("player_backward"):
-		input.y += 1
+		input.y += 2.5
 	if Input.is_action_pressed("player_left"):
-		input.x -= 1
+		input.x -= 2.5
 	if Input.is_action_pressed("player_right"):
-		input.x += 1
+		input.x += 2.5
 	input = input.normalized()
 	var forward = global_transform.basis.z
 	var right = global_transform.basis.x

@@ -4,7 +4,7 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 
 [sub_resource type="PlaneMesh" id=1]
-size = Vector2( 25, 25 )
+size = Vector2( 55, 50 )
 
 [sub_resource type="SpatialMaterial" id=2]
 albedo_texture = ExtResource( 1 )
@@ -16,6 +16,7 @@ data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0,
 [node name="TheGrandHeist" type="Spatial"]
 
 [node name="Floor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.6103 )
 mesh = SubResource( 1 )
 material/0 = SubResource( 2 )
 
@@ -31,3 +32,137 @@ shadow_enabled = true
 
 [node name="KinematicBody" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.215582, 0 )
+
+[node name="Bank" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.2895 )
+use_collision = true
+width = 15.0
+depth = 4.0
+
+[node name="Main Floor" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.532157, 0.0178545, -32.0142 )
+width = 50.0
+depth = 60.0
+
+[node name="Entrance stairs" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.277881, 2.05237 )
+width = 13.4815
+
+[node name="Entrance Staircase" type="CSGBox" parent="Bank/Entrance stairs"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.312703, 0.954211 )
+width = 12.5265
+
+[node name="Entrance frames2" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.47176, 2.00293, -1.00493 )
+width = 2.04858
+height = 11.2061
+
+[node name="dooryway frame" type="CSGBox" parent="Bank/Entrance frames2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.21319, 4.61586, -0.0140371 )
+width = 12.3079
+
+[node name="doorway frame" type="CSGBox" parent="Bank/Entrance frames2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9359, -0.0316119, -0.00544548 )
+width = 2.04858
+height = 11.2991
+
+[node name="Front Walls" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6231, 7.5919, -1.08213 )
+width = 17.673
+height = 17.3825
+
+[node name="Front Walls" type="CSGBox" parent="Bank/Front Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31.8592, 0.0961056, 0.019886 )
+width = 18.7737
+height = 17.3825
+
+[node name="Front Wall" type="CSGBox" parent="Bank/Front Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.495, 4.01, 0.0410004 )
+width = 26.6568
+height = 9.5647
+
+[node name="Left Walls" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.6255, 8.51575, -31.9701 )
+height = 15.7583
+depth = 59.9337
+
+[node name="Right Walls" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.425, 8.4, -31.97 )
+height = 15.7583
+depth = 59.9337
+
+[node name="Backrooms entrance" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.47176, 2.00293, -60.9667 )
+width = 5.6
+height = 11.2061
+
+[node name="dooryway frame" type="CSGBox" parent="Bank/Backrooms entrance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.21319, 4.61586, -0.0140371 )
+width = 12.3079
+
+[node name="doorway frame" type="CSGBox" parent="Bank/Backrooms entrance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9359, -0.0316119, -0.00544739 )
+width = 5.6
+height = 11.2991
+
+[node name="Backroom entry walls" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6244, 7.592, -61.063 )
+width = 17.673
+height = 17.3825
+
+[node name="Back Walls" type="CSGBox" parent="Bank/Backroom entry walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31.8592, 0.0961056, 0.019886 )
+width = 18.7737
+height = 17.3825
+
+[node name="Back Wall" type="CSGBox" parent="Bank/Backroom entry walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.4952, 3.88837, 0.0398407 )
+width = 26.6568
+height = 9.5647
+
+[node name="2nd floor" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.71971, -43.451 )
+width = 32.0266
+depth = 34.8178
+
+[node name="lil segment" type="CSGBox" parent="Bank/2nd floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6847, 0, -13.5787 )
+width = 8.26171
+depth = 8.3089
+
+[node name="lil segment2" type="CSGBox" parent="Bank/2nd floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4735, 0, -13.5787 )
+width = 8.26171
+depth = 8.3089
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Bank/2nd floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.3487 )
+radius = 16.0299
+height = 1.97373
+
+[node name="side stairs right" type="CSGBox" parent="Bank"]
+transform = Transform( 0, 0, 1, 1, 0.61, 0, -1, 0.793, 0, 20.1611, 3.98198, -49.563 )
+width = 8.26171
+depth = 8.3089
+
+[node name="side stairs right2" type="CSGBox" parent="Bank"]
+transform = Transform( 0, 0, 1, 1, 0.61, 0, -1, 0.793, 0, -20.1408, 3.98198, -49.563 )
+width = 8.26171
+depth = 8.3089
+
+[node name="Front roofing" type="CSGBox" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00576496, 6.58437, 3.76115 )
+width = 14.0421
+depth = 8.79948
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Bank/Front roofing"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.70863, -3.90876, 3.06489 )
+height = 5.8577
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Bank/Front roofing"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.87551, -3.90876, 3.06489 )
+height = 5.8577
+
+[node name="Pillars holding 2nd" type="CSGCylinder" parent="Bank"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5137, 3.80314, -15.9256 )
+height = 6.55417
