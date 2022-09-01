@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Textures/grass2.jpg" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Gold bar.tscn" type="PackedScene" id=3]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 55, 50 )
@@ -166,3 +167,6 @@ height = 5.8577
 [node name="Pillars holding 2nd" type="CSGCylinder" parent="Bank"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5137, 3.80314, -15.9256 )
 height = 6.55417
+
+[node name="Gold bar" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.23764, 0.217258, 10.3152 )

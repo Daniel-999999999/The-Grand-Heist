@@ -30,6 +30,8 @@ func _process(delta):
 	camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, minCamVerticalAngle, maxCamVerticalAngle)
 	rotation_degrees -= Vector3(0, rad2deg(mouseDelta.x), 0) * lookSensitivity * delta
 	mouseDelta = Vector2()
+	
+	$Camera/playerScore.text = str(Global.currentScore)
 
 func _physics_process (delta):
 	playerVelocity.x = 0
