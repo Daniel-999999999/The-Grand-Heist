@@ -36,6 +36,3 @@ mesh = SubResource( 2 )
 
 [node name="weapon" type="Node" parent="."]
 script = ExtResource( 3 )
-fire_rate = null
-clip_size = null
-reload_rate = null
