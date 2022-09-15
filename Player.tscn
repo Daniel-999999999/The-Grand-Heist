@@ -10,7 +10,7 @@ height = 1.75
 
 [sub_resource type="CapsuleMesh" id=2]
 
-[node name="KinematicBody" type="KinematicBody"]
+[node name="KinematicBody" type="KinematicBody" groups=["Player"]]
 script = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
