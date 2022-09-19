@@ -18,10 +18,7 @@ var mouseDelta : Vector2 = Vector2()
 onready var camera = get_node("Camera")
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
+
 func _input (event):
 	if event.is_action_pressed("Primary Fire"):
 		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
@@ -37,8 +34,6 @@ func _process(delta):
 	camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, minCamVerticalAngle, maxCamVerticalAngle)
 	rotation_degrees -= Vector3(0, rad2deg(mouseDelta.x), 0) * lookSensitivity * delta
 	mouseDelta = Vector2()
-	
-	$Camera/playerScore.text = str(Global.currentScore)
 
 func _physics_process (delta):
 	playerVelocity.x = 0

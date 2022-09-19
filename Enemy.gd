@@ -28,8 +28,7 @@ func _on_Area_body_exited(body):
 		print(body.name + "exited")
 		set_color_blue()
 
-func move_to_target(Delta):
-	
+#func move_to_target(Delta):
 
 func set_color_red():
 	$MeshInstance.get_surface_material(0).set_albedo(Color(1, 0, 0))
