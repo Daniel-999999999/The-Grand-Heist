@@ -1,0 +1,27 @@
+[gd_scene format=2]
+
+[node name="Big Boi Bank info" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 52.0
+margin_top = 108.0
+margin_right = 449.0
+margin_bottom = 195.0
+text = "Goal of this heist is too either sneakily or loud, enter the bank
+solve any issues e.g. puzzles that may get in your way, and
+break into the great vault, and successfully steal all the gold
+and extract it all at the escape point"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 145.0
+margin_top = 524.0
+margin_right = 335.0
+margin_bottom = 583.0
+text = "PLAY"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 176.0
+margin_top = 33.0
+margin_right = 275.0
+margin_bottom = 47.0
+text = "Big Boi Bank"

@@ -5,10 +5,17 @@
 [node name="Main Menu" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
-margin_right = 12.0
+margin_right = 416.0
 margin_bottom = 20.0
-text = "Play Game"
+text = "Big Boi Bank"
 script = ExtResource( 1 )
 scene_to_load = "res://TheGrandHeist.tscn"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 1.0
+margin_top = 20.0
+margin_right = 418.0
+margin_bottom = 46.0
+text = "MORE HESITS TO COME"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

@@ -10,7 +10,7 @@ height = 1.75
 
 [sub_resource type="CapsuleMesh" id=2]
 
-[node name="KinematicBody" type="KinematicBody"]
+[node name="KinematicBody" type="KinematicBody" groups=["Player"]]
 script = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
@@ -26,13 +26,22 @@ current = true
 enabled = true
 cast_to = Vector3( 0, 0, -100 )
 
-[node name="playerScore" type="Label" parent="Camera"]
-margin_right = 40.0
-margin_bottom = 14.0
-
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 0.75, 0, 0, 0, 0, -1.061, 0, 0.75, 0, 0, 0, 0 )
 mesh = SubResource( 2 )
+material/0 = null
 
 [node name="weapon" type="Node" parent="."]
 script = ExtResource( 3 )
+
+[node name="UI" type="Control" parent="."]
+margin_right = 1024.0
+margin_bottom = 602.0
+
+[node name="Label" type="Label" parent="UI"]
+margin_left = 844.0
+margin_top = 539.0
+margin_right = 1025.0
+margin_bottom = 598.0
+text = "Ammo
+2/2"
