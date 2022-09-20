@@ -1,6 +1,5 @@
 extends Button
 
-export(String) var scene_to_load
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -17,9 +16,9 @@ func _ready():
 #	pass
 
 
-func _on_Button_pressed():
-	get_tree().change_scene("res://Big Boi Bank info.tscn")
+func _on_Big_Boi_Bank_Play_pressed():
+	get_tree().change_scene("res://TheGrandHeist.tscn")
 
 
-func _on_Options_button_pressed():
-	get_tree().change_scene("res://Options Menu.tscn")
+func _on_Back1_pressed():
+	get_tree().change_scene("res://Main Menu.tscn")

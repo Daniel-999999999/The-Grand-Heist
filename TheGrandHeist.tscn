@@ -176,6 +176,10 @@ height = 5.8577
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5137, 3.80314, -15.9256 )
 height = 6.55417
 
+[node name="Pillars holding 2nd" type="CSGCylinder" parent="Bank/Pillars holding 2nd"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.8712, 0.247248, 0.121078 )
+height = 6.55417
+
 [node name="Gold bar" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.23764, 0.217258, 10.3152 )
 

@@ -1,7 +1,7 @@
 extends KinematicBody
 
 #mainPhysics
-var movementSpeed = 4
+var movementSpeed = 6
 var jumpStrength = 2.5
 var gravity = 9.8
 
@@ -59,6 +59,8 @@ func _physics_process (delta):
 	playerVelocity = move_and_slide(playerVelocity, Vector3.UP)
 	if Input.is_action_pressed("jump") and is_on_floor():
 		playerVelocity.y = jumpStrength
+		
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)  
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
