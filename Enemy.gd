@@ -1,5 +1,6 @@
 extends KinematicBody
 
+export var speed = 100
 var space_state
 var target
 
@@ -12,6 +13,7 @@ func _process(delta):
 		if result.collider.is_in_group("Player"):
 			look_at(target.global_transform.origin, Vector3.UP)
 			set_color_red()
+			move_to_target(delta)
 		else:
 			set_color_blue()
 
@@ -27,8 +29,10 @@ func _on_Area_body_exited(body):
 		target = null
 		print(body.name + "exited")
 		set_color_blue()
-
-#func move_to_target(Delta):
+		
+func move_to_target(delta):
+	var direction = (target.transform.origin - transform.origin).normalized()
+	move_and_slide(direction * speed * delta, Vector3.UP)
 
 func set_color_red():
 	$MeshInstance.get_surface_material(0).set_albedo(Color(1, 0, 0))

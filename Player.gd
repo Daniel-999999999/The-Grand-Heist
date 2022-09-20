@@ -1,7 +1,7 @@
 extends KinematicBody
 
 #mainPhysics
-var movementSpeed = 4
+var movementSpeed = 6
 var jumpStrength = 2.5
 var gravity = 9.8
 
@@ -17,23 +17,26 @@ var mouseDelta : Vector2 = Vector2()
 #player components
 onready var camera = get_node("Camera")
 
-# Called when the node enters the scene tree for the first time.
-
+ #Called when the node enters the scene tree for the first time.	
 func _input (event):
-	if event.is_action_pressed("Primary Fire"):
-		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			if event.is_action_pressed("ui_cancel"):
-				Input.event.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-				if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-					if event is InputEventMouseMotion:
-						mouseDelta = event.relative
+	if event is InputEventMouseMotion:
+		mouseDelta = event.relative
+		if event.is_action_pressed("Primary Fire"):
+			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+				if event.is_action_pressed("ui_cancel"):
+					Input.event.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+					if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+						if event is InputEventMouseMotion:
+							mouseDelta = event.relative
 	
 func _process(delta):
 	camera.rotation_degrees -= Vector3(rad2deg(mouseDelta.y), 0, 0) * lookSensitivity * delta
 	camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, minCamVerticalAngle, maxCamVerticalAngle)
 	rotation_degrees -= Vector3(0, rad2deg(mouseDelta.x), 0) * lookSensitivity * delta
 	mouseDelta = Vector2()
+	
+	#$Camera/playerScore.text = str(Global.currentScore)
 
 func _physics_process (delta):
 	playerVelocity.x = 0
@@ -56,6 +59,8 @@ func _physics_process (delta):
 	playerVelocity = move_and_slide(playerVelocity, Vector3.UP)
 	if Input.is_action_pressed("jump") and is_on_floor():
 		playerVelocity.y = jumpStrength
+		
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)  
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

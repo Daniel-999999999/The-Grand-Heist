@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://1Back.gd" type="Script" id=1]
+
+[node name="Options Menu" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 404.0
+margin_top = 306.0
+margin_right = 603.0
+margin_bottom = 320.0
+text = "Yeah so... there is nothing here"
+
+[node name="1Back" type="Button" parent="."]
+margin_left = 463.0
+margin_top = 329.0
+margin_right = 546.0
+margin_bottom = 349.0
+text = "Main Menu"
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="1Back" to="1Back" method="_on_1Back_pressed"]

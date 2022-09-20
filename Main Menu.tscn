@@ -4,11 +4,35 @@
 
 [node name="Main Menu" type="Node2D"]
 
-[node name="Button" type="Button" parent="."]
-margin_right = 12.0
-margin_bottom = 20.0
-text = "Play Game"
+[node name="Big Boi Bank Select" type="Button" parent="."]
+margin_left = 312.0
+margin_top = 241.0
+margin_right = 728.0
+margin_bottom = 261.0
+text = "Big Boi Bank"
 script = ExtResource( 1 )
 scene_to_load = "res://TheGrandHeist.tscn"
 
-[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[node name="Label" type="Label" parent="."]
+margin_left = 448.0
+margin_top = 357.0
+margin_right = 865.0
+margin_bottom = 383.0
+text = "MORE HESITS TO COME"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 481.0
+margin_top = 148.0
+margin_right = 556.0
+margin_bottom = 162.0
+text = "Select heist"
+
+[node name="Options button" type="Button" parent="."]
+margin_left = 493.0
+margin_top = 265.0
+margin_right = 556.0
+margin_bottom = 285.0
+text = "Options"
+
+[connection signal="pressed" from="Big Boi Bank Select" to="Big Boi Bank Select" method="_on_Button_pressed"]
+[connection signal="pressed" from="Options button" to="Big Boi Bank Select" method="_on_Options_button_pressed"]
