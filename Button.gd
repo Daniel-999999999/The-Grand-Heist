@@ -23,3 +23,7 @@ func _on_Button_pressed():
 
 func _on_Options_button_pressed():
 	get_tree().change_scene("res://Options Menu.tscn")
+
+
+func _on_Big_Bio_Bank_Play_pressed():
+	get_tree().change_scene("res://TheGrandHeist.tscn")
