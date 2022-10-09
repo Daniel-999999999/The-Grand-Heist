@@ -4,6 +4,8 @@ extends KinematicBody
 var movementSpeed = 6
 var jumpStrength = 2.5
 var gravity = 9.8
+var speed_bonus = 0
+var velocity = Vector2.ZERO
 
 #camera
 var minCamVerticalAngle = -90.0
@@ -39,11 +41,16 @@ func _process(delta):
 	#$Camera/playerScore.text = str(Global.currentScore)
 
 func _physics_process (delta):
-	playerVelocity.x = 0
-	playerVelocity.z = 0
 	var input = Vector2()
 	if Input.is_action_pressed("player_forward"):
 		input.y -= 2.5
+		velocity.y -= playerVelocity + speed_bonus
+		if Input.is_action_pressed("run"):
+			speed_bonus.y = 10
+		else:
+			speed_bonus.y = 0
+			velocity = move_and_slide(velocity)
+			
 	if Input.is_action_pressed("player_backward"):
 		input.y += 2.5
 	if Input.is_action_pressed("player_left"):
@@ -59,6 +66,12 @@ func _physics_process (delta):
 	playerVelocity = move_and_slide(playerVelocity, Vector3.UP)
 	if Input.is_action_pressed("jump") and is_on_floor():
 		playerVelocity.y = jumpStrength
+	
+	if Input.is_action_pressed("run"):
+		input.y -= 5
+		input.y += 5
+		input.x -= 5
+		input.x += 5
 		
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)  
 

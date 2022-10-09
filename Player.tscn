@@ -29,7 +29,6 @@ cast_to = Vector3( 0, 0, -100 )
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 0.75, 0, 0, 0, 0, -1.061, 0, 0.75, 0, 0, 0, 0 )
 mesh = SubResource( 2 )
-material/0 = null
 
 [node name="weapon" type="Node" parent="."]
 script = ExtResource( 3 )
