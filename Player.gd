@@ -2,9 +2,9 @@ extends KinematicBody
 
 #mainPhysics
 var movementSpeed = 6
-var jumpStrength = 2.5
+var jumpStrength = 4
 var gravity = 9.8
-var speed_bonus = 0
+var speed_bonusy = -10
 var velocity = Vector2.ZERO
 
 #camera
@@ -26,7 +26,7 @@ func _input (event):
 		if event.is_action_pressed("Primary Fire"):
 			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-				if event.is_action_pressed("ui_cancel"):
+				if event.is_action_pressed("esc"):
 					Input.event.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 					if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 						if event is InputEventMouseMotion:
@@ -38,25 +38,24 @@ func _process(delta):
 	rotation_degrees -= Vector3(0, rad2deg(mouseDelta.x), 0) * lookSensitivity * delta
 	mouseDelta = Vector2()
 	
-	#$Camera/playerScore.text = str(Global.currentScore)
-
 func _physics_process (delta):
 	var input = Vector2()
 	if Input.is_action_pressed("player_forward"):
 		input.y -= 2.5
-		velocity.y -= playerVelocity + speed_bonus
 		if Input.is_action_pressed("run"):
-			speed_bonus.y = 10
-		else:
-			speed_bonus.y = 0
-			velocity = move_and_slide(velocity)
-			
+			input.y -= 5
 	if Input.is_action_pressed("player_backward"):
 		input.y += 2.5
+		if Input.is_action_pressed("run"):
+			input.y += 5
 	if Input.is_action_pressed("player_left"):
 		input.x -= 2.5
+		if Input.is_action_pressed("run"):
+			input.x -= 5
 	if Input.is_action_pressed("player_right"):
 		input.x += 2.5
+		if Input.is_action_pressed("run"):
+			input.x += 5
 	input = input.normalized()
 	var forward = global_transform.basis.z
 	var right = global_transform.basis.x
@@ -66,12 +65,6 @@ func _physics_process (delta):
 	playerVelocity = move_and_slide(playerVelocity, Vector3.UP)
 	if Input.is_action_pressed("jump") and is_on_floor():
 		playerVelocity.y = jumpStrength
-	
-	if Input.is_action_pressed("run"):
-		input.y -= 5
-		input.y += 5
-		input.x -= 5
-		input.x += 5
 		
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)  
 
