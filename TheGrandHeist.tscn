@@ -33,7 +33,7 @@ transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0.395181, 1
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32.6771, 4.07542, 36.2429 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 45, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.750616, 73.3657, -54.8713 )
 shadow_enabled = true
 
 [node name="KinematicBody" parent="." instance=ExtResource( 2 )]
@@ -177,6 +177,21 @@ depth = 21.6322
 
 [node name="Back Wall" type="Node" parent="."]
 
+[node name="Rightwall" type="CSGBox" parent="Back Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.502, 16.8507, -100.181 )
+width = 39.0
+height = 29.234
+
+[node name="Leftwall" type="CSGBox" parent="Back Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30.6304, 16.8357, -100.289 )
+width = 39.0
+height = 29.234
+
+[node name="Middle wall" type="CSGBox" parent="Back Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.474796, 20.6062, -100.2 )
+width = 25.209
+height = 21.7248
+
 [node name="Front Wall" type="Node" parent="."]
 
 [node name="Front Left Wall" type="CSGBox" parent="Front Wall"]
@@ -218,13 +233,13 @@ depth = 17.1532
 [node name="Stairs" type="Node" parent="."]
 
 [node name="side stairs right" type="CSGBox" parent="Stairs"]
-transform = Transform( 0, 0, 1, 1, 0.61, 0, -1, 0.793, 0, 42.8932, 7.78245, -25.7279 )
+transform = Transform( -4.73548e-08, 2.81105e-08, 1, 0.909039, 0.766408, 0, -1.08335, 0.643093, -4.37114e-08, 42.8932, 8.27573, -25.0763 )
 use_collision = true
 width = 12.9473
 depth = 8.3089
 
 [node name="side stairs left" type="CSGBox" parent="Stairs"]
-transform = Transform( 0, 0, 1, 1, 0.61, 0, -1, 0.793, 0, -43.9361, 7.78245, -25.7279 )
+transform = Transform( -4.73548e-08, 2.81105e-08, 1, 0.909039, 0.766408, 0, -1.08335, 0.643093, -4.37114e-08, -43.9361, 8.22112, -24.9946 )
 use_collision = true
 width = 12.9473
 depth = 8.3089
@@ -232,14 +247,14 @@ depth = 8.3089
 [node name="Decoration" type="Node" parent="."]
 
 [node name="Pillars holding 2nd2" type="CSGCylinder" parent="Decoration"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3575, 7.15616, -27.094 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5337, 7.45335, -45.307 )
 use_collision = true
-height = 6.55417
+height = 13.1568
 
 [node name="Pillars holding 2nd" type="CSGCylinder" parent="Decoration"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5137, 6.90892, -27.2151 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5076, 8.26911, -45.3491 )
 use_collision = true
-height = 6.55417
+height = 10.1218
 
 [node name="Gold bar" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.23764, 6.01681, 46.0028 )
@@ -264,23 +279,25 @@ shape = SubResource( 5 )
 
 [node name="Barriers" type="Node" parent="."]
 
-[node name="CSGBox2" type="CSGBox" parent="Barriers"]
+[node name="Middle Wall" type="CSGBox" parent="Barriers"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27.5278, 50.9485 )
 use_collision = true
 width = 102.667
 height = 57.5283
 material = SubResource( 7 )
 
-[node name="CSGBox3" type="CSGBox" parent="Barriers"]
+[node name="Right Wall" type="CSGBox" parent="Barriers"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.7493, 17.2437, -51.8722 )
 use_collision = true
 height = 69.6429
 depth = 208.006
 material = SubResource( 8 )
 
-[node name="CSGBox4" type="CSGBox" parent="Barriers"]
+[node name="Left Wall" type="CSGBox" parent="Barriers"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -50.2693, 17.2437, -51.8722 )
 use_collision = true
 height = 69.6429
 depth = 208.006
 material = SubResource( 9 )
+
+[node name="Celling" type="Node" parent="."]

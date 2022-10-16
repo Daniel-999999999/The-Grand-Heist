@@ -4,9 +4,6 @@ extends KinematicBody
 var movementSpeed = 6
 var jumpStrength = 4
 var gravity = 9.8
-var speed_bonusy = -10
-var velocity = Vector2.ZERO
-
 #camera
 var minCamVerticalAngle = -90.0
 var maxCamVerticalAngle = 90.0
@@ -40,22 +37,24 @@ func _process(delta):
 	
 func _physics_process (delta):
 	var input = Vector2()
+	
 	if Input.is_action_pressed("player_forward"):
-		input.y -= 2.5
-		if Input.is_action_pressed("run"):
-			input.y -= 5
+		input.y -= 1
+		
 	if Input.is_action_pressed("player_backward"):
-		input.y += 2.5
-		if Input.is_action_pressed("run"):
-			input.y += 5
+		input.y += 1
+
 	if Input.is_action_pressed("player_left"):
-		input.x -= 2.5
-		if Input.is_action_pressed("run"):
-			input.x -= 5
+		input.x -= 1
+		
 	if Input.is_action_pressed("player_right"):
-		input.x += 2.5
-		if Input.is_action_pressed("run"):
-			input.x += 5
+		input.x += 1
+	
+	if Input.is_action_pressed("run"):
+		movementSpeed = 15
+	else:
+		movementSpeed = 10
+	
 	input = input.normalized()
 	var forward = global_transform.basis.z
 	var right = global_transform.basis.x
