@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Bullet.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.752941, 0.752941, 0.752941, 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.752941, 0.752941, 0.752941, 1 )
+
+[sub_resource type="CapsuleShape" id=3]
+radius = 1.13591
+height = 1.94062
+
+[node name="Area" type="Area"]
+script = ExtResource( 1 )
+
+[node name="CSGCombiner" type="CSGCombiner" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0124962, -0.999922, 0, 0.999922, 0.0124962, 0, 0, 0.434 )
+
+[node name="CSGCylinder" type="CSGCylinder" parent="CSGCombiner"]
+height = 2.71104
+material = SubResource( 1 )
+
+[node name="CSGSphere" type="CSGSphere" parent="CSGCombiner"]
+transform = Transform( 0.920079, 0, 0.0419737, 0, 1, 0, -0.0411691, 0, 0.938061, 0.000161767, 1.35472, 0 )
+material = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.999998, -6.28039e-05, 0.00201048, 6.25367e-05, 1, 0.000147151, -0.00191112, -0.000139758, 1.052, 0, 0, 0.609 )
+shape = SubResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_Area_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="destroy"]

@@ -2,8 +2,8 @@ extends KinematicBody
 
 #mainPhysics
 var movementSpeed = 6
-var jumpStrength = 4
-var gravity = 9.8
+var jumpStrength = 7
+var gravity = 50
 #camera
 var minCamVerticalAngle = -90.0
 var maxCamVerticalAngle = 90.0
@@ -16,6 +16,8 @@ var mouseDelta : Vector2 = Vector2()
 #player components
 onready var camera = get_node("Camera")
 
+onready var bulletScene = preload("res://Bullet.tscn")
+onready var bulletSpawn = get_node("Camera/bulletSpawn") 
  #Called when the node enters the scene tree for the first time.	
 func _input (event):
 	if event is InputEventMouseMotion:
@@ -34,6 +36,15 @@ func _process(delta):
 	camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, minCamVerticalAngle, maxCamVerticalAngle)
 	rotation_degrees -= Vector3(0, rad2deg(mouseDelta.x), 0) * lookSensitivity * delta
 	mouseDelta = Vector2()
+	
+	if Input.is_action_just_pressed("Primary Fire"):
+		Primary_Fire()
+	
+func Primary_Fire ():
+	var bullet = bulletScene.instance()
+	get_node("/root/TheGrandHeist").add_child(bullet)
+	bullet.global_transform = bulletSpawn.global_transform
+	bullet.scale = Vector3(0.1,0.1,0.1)
 	
 func _physics_process (delta):
 	var input = Vector2()

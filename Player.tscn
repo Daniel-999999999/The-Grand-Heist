@@ -34,6 +34,9 @@ margin_right = 532.0
 margin_bottom = 320.0
 texture = ExtResource( 4 )
 
+[node name="bulletSpawn" type="Spatial" parent="Camera"]
+transform = Transform( -0.999996, -0.00289724, -8.74226e-08, -0.00289724, 0.999994, -0.00174533, 5.14406e-06, -0.00174532, -0.999998, 0, 0, -1.064 )
+
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 0.75, 0, 0, 0, 0, -1.061, 0, 0.75, 0, 0, 0, 0 )
 mesh = SubResource( 2 )
