@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Gold bar.tscn" type="PackedScene" id=3]
@@ -7,6 +7,81 @@
 
 [sub_resource type="SpatialMaterial" id=6]
 albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
+
+[sub_resource type="SpatialMaterial" id=21]
+albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
+
+[sub_resource type="SpatialMaterial" id=22]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=23]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=24]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=25]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=26]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=27]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=28]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=29]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=31]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=32]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=33]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=38]
+albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
+
+[sub_resource type="SpatialMaterial" id=39]
+albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
 
 [sub_resource type="SphereMesh" id=4]
 
@@ -23,6 +98,36 @@ albedo_color = Color( 1, 1, 1, 0 )
 [sub_resource type="SpatialMaterial" id=9]
 flags_transparent = true
 albedo_color = Color( 0, 0, 0, 0 )
+
+[sub_resource type="SpatialMaterial" id=34]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=35]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=36]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=37]
+albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.501961, 0.47451, 0.47451, 1 )
+
+[sub_resource type="SpatialMaterial" id=40]
+albedo_color = Color( 0.294118, 0.282353, 0.282353, 1 )
+
+[sub_resource type="SpatialMaterial" id=41]
+albedo_color = Color( 0.709804, 0.705882, 0.705882, 1 )
+
+[sub_resource type="SpatialMaterial" id=42]
+albedo_color = Color( 0.709804, 0.705882, 0.705882, 1 )
+
+[sub_resource type="SpatialMaterial" id=43]
+albedo_color = Color( 0.537255, 0.509804, 0.509804, 1 )
+
+[sub_resource type="SpatialMaterial" id=44]
+albedo_color = Color( 0.537255, 0.509804, 0.509804, 1 )
 
 [node name="TheGrandHeist" type="Spatial"]
 
@@ -44,34 +149,36 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.48075, 7.05367 )
 [node name="Main Path" type="CSGBox" parent="Outside flooring"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 19.3811 )
 use_collision = true
-width = 302.216
+width = 600.0
 depth = 63.3839
 
 [node name="road" type="CSGBox" parent="Outside flooring"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.370338, 68.9204 )
-width = 304.124
+width = 926.303
 depth = 36.6053
 material = SubResource( 6 )
 
 [node name="Exterior Path" type="CSGBox" parent="Outside flooring"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 119.048 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 218.931 )
 use_collision = true
-width = 302.216
-depth = 63.3839
+width = 600.0
+depth = 267.292
 
 [node name="Flooring" type="Node" parent="."]
 
 [node name="Main Floor" type="CSGBox" parent="Flooring"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.532157, 3.12363, -54.0769 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.532157, 3.12363, -54.4874 )
 use_collision = true
 width = 99.068
 depth = 90.4293
+material = SubResource( 11 )
 
 [node name="Front Flooring" type="CSGBox" parent="Flooring"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0765, -1.43098 )
 use_collision = true
 width = 29.3335
 depth = 37.5767
+material = SubResource( 12 )
 
 [node name="2nd floor" type="CSGBox" parent="Flooring"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.902, -81.8362 )
@@ -103,36 +210,42 @@ depth = 67.8514
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.129, 20.93 )
 use_collision = true
 width = 12.5265
+material = SubResource( 13 )
 
 [node name="Entrance stair segment 2" type="CSGBox" parent="Front Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.647, 19.976 )
 use_collision = true
 width = 13.4815
+material = SubResource( 14 )
 
 [node name="Ectrance stair segment 3" type="CSGBox" parent="Front Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.078, 17.9238 )
 use_collision = true
 width = 15.0
 depth = 4.0
+material = SubResource( 15 )
 
 [node name="Left pillar" type="CSGCylinder" parent="Front Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0117, 17.4035, 14.1918 )
 use_collision = true
 radius = 2.85303
 height = 26.1542
+material = SubResource( 20 )
 
 [node name="Right Pillar" type="CSGCylinder" parent="Front Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8126, 16.9854, 14.1918 )
 use_collision = true
 radius = 2.85303
 height = 26.1542
+material = SubResource( 21 )
 
 [node name="Pillar base left" type="CSGBox" parent="Front Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9961, 4.23365, 14.2609 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9347, 4.23365, 14.2816 )
 use_collision = true
 width = 6.23403
 height = 0.275843
 depth = 5.79455
+material = SubResource( 22 )
 
 [node name="Pillar base right" type="CSGBox" parent="Front Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9141, 4.22249, 14.2609 )
@@ -140,12 +253,14 @@ use_collision = true
 width = 6.23403
 height = 0.275843
 depth = 5.79455
+material = SubResource( 23 )
 
 [node name="Front Roofing" type="CSGBox" parent="Front Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.456, 3.678 )
 use_collision = true
 width = 29.4044
 depth = 29.138
+material = SubResource( 24 )
 
 [node name="Right wall" type="Node" parent="."]
 
@@ -154,12 +269,14 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.9589, 16.8527, -54.0506 )
 use_collision = true
 height = 29.2342
 depth = 90.3682
+material = SubResource( 17 )
 
 [node name="Front Right Wall" type="CSGBox" parent="Right wall"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.697, 16.838, 0.259 )
 use_collision = true
 height = 29.2342
 depth = 20.8496
+material = SubResource( 16 )
 
 [node name="Left wall" type="Node" parent="."]
 
@@ -168,12 +285,14 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.1233, 16.8377, -54.0559 )
 use_collision = true
 height = 29.2342
 depth = 90.3682
+material = SubResource( 18 )
 
 [node name="Front Left Wall" type="CSGBox" parent="Left wall"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6789, 16.8377, -0.151954 )
 use_collision = true
 height = 29.2342
 depth = 21.6322
+material = SubResource( 19 )
 
 [node name="Back Wall" type="Node" parent="."]
 
@@ -181,16 +300,19 @@ depth = 21.6322
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.502, 16.8507, -100.181 )
 width = 39.0
 height = 29.234
+material = SubResource( 25 )
 
 [node name="Leftwall" type="CSGBox" parent="Back Wall"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30.6304, 16.8357, -100.289 )
 width = 39.0
 height = 29.234
+material = SubResource( 26 )
 
 [node name="Middle wall" type="CSGBox" parent="Back Wall"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.474796, 20.6062, -100.2 )
 width = 25.209
 height = 21.7248
+material = SubResource( 27 )
 
 [node name="Front Wall" type="Node" parent="."]
 
@@ -199,36 +321,42 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -31.729
 use_collision = true
 height = 29.2342
 depth = 35.3207
+material = SubResource( 28 )
 
 [node name="Front Right Wall" type="CSGBox" parent="Front Wall"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 30.373, 16.838, -9.86 )
 use_collision = true
 height = 29.2342
 depth = 35.3207
+material = SubResource( 29 )
 
 [node name="FFront Left Wall" type="CSGBox" parent="Front Wall"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.982, 16.8377, 9.68174 )
 use_collision = true
 height = 29.2342
 depth = 5.69004
+material = SubResource( 30 )
 
 [node name="FFront Right Wall" type="CSGBox" parent="Front Wall"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.85, 16.841, 9.682 )
 use_collision = true
 height = 29.2342
 depth = 5.69004
+material = SubResource( 31 )
 
 [node name="FFront Top Wall" type="CSGBox" parent="Front Wall"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.526, 28.717, 9.682 )
 use_collision = true
 height = 5.47677
 depth = 17.1532
+material = SubResource( 32 )
 
 [node name="FFront Bottom Wall" type="CSGBox" parent="Front Wall"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.526, 14.1525, 9.682 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.535197, 14.1525, 9.6247 )
 use_collision = true
 height = 5.47677
 depth = 17.1532
+material = SubResource( 33 )
 
 [node name="Stairs" type="Node" parent="."]
 
@@ -250,11 +378,13 @@ depth = 8.3089
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5337, 7.45335, -45.307 )
 use_collision = true
 height = 13.1568
+material = SubResource( 38 )
 
 [node name="Pillars holding 2nd" type="CSGCylinder" parent="Decoration"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5076, 8.26911, -45.3491 )
 use_collision = true
 height = 10.1218
+material = SubResource( 39 )
 
 [node name="Gold bar" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.23764, 6.01681, 46.0028 )
@@ -302,86 +432,121 @@ material = SubResource( 9 )
 
 [node name="Celling" type="Node" parent="."]
 
-[node name="Glass Roof" type="CSGSphere" parent="Celling"]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 4.5, 0, 31.5749, -54.8499 )
-radius = 6.35584
-
 [node name="Right Roof" type="CSGBox" parent="Celling"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.0017, 30.467, -55.209 )
 width = 29.7564
 depth = 91.7473
+material = SubResource( 34 )
 
 [node name="Left Roof" type="CSGBox" parent="Celling"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -33.9983, 30.467, -55.209 )
 width = 29.7564
 depth = 91.7473
+material = SubResource( 35 )
 
 [node name="Front Roof" type="CSGBox" parent="Celling"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79472, 30.467, -18.0464 )
 width = 45.2687
 depth = 16.4519
+material = SubResource( 36 )
 
 [node name="Back Roof" type="CSGBox" parent="Celling"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79472, 30.467, -91.6719 )
 width = 45.2687
 depth = 16.4519
+material = SubResource( 37 )
 
-[node name="Cornor Piece" type="CSGBox" parent="Celling"]
-transform = Transform( 0.559193, 0, 0.829037, 0, 1, 0, -0.829037, 0, 0.559193, -17.7236, 30.467, -76.6481 )
-width = 19.3607
-depth = 10.3653
+[node name="Glass roof" type="Node" parent="."]
 
-[node name="Cornor Piece2" type="CSGBox" parent="Celling"]
-transform = Transform( -0.559193, 0, 0.829037, 0, 1, 0, -0.829037, 0, -0.559193, 17.7269, 30.467, -76.6481 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam" type="CSGBox" parent="Glass roof"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1494, 32.3278, -54.7838 )
+depth = 57.9902
+material = SubResource( 10 )
 
-[node name="Cornor Piece3" type="CSGBox" parent="Celling"]
-transform = Transform( -0.559193, 0, 0.829037, 0, 1, 0, -0.829037, 0, -0.559193, -16.564, 30.467, -31.289 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam2" type="CSGBox" parent="Glass roof"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1902, 32.3278, -54.7838 )
+depth = 57.9902
+material = SubResource( 10 )
 
-[node name="Cornor Piece4" type="CSGBox" parent="Celling"]
-transform = Transform( 0.559193, 0, 0.829037, 0, 1, 0, -0.829037, 0, 0.559193, 17.7412, 30.467, -32.9932 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam3" type="CSGBox" parent="Glass roof"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0983424, 32.3702, -25.1749 )
+depth = 42.3998
+material = SubResource( 10 )
 
-[node name="Cornor Piece5" type="CSGBox" parent="Celling"]
-transform = Transform( 0.927184, 0, 0.374607, 0, 1, 0, -0.374607, 0, 0.927184, -10.2467, 30.467, -84.9203 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam4" type="CSGBox" parent="Glass roof"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0983424, 32.3702, -84.4879 )
+depth = 42.3998
+material = SubResource( 10 )
 
-[node name="Cornor Piece6" type="CSGBox" parent="Celling"]
-transform = Transform( 0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -22.508, 30.467, -64.9964 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam5" type="CSGBox" parent="Glass roof"]
+transform = Transform( -4.37114e-08, 0.5, 0.476314, 0, 0.866025, -0.275, -1, -2.18557e-08, -2.08203e-08, 10.4664, 37.5906, -25.1749 )
+depth = 42.3998
+material = SubResource( 10 )
 
-[node name="Cornor Piece7" type="CSGBox" parent="Celling"]
-transform = Transform( -0.927184, 0, 0.374606, 0, 1, 0, -0.374606, 0, -0.927184, 7.684, 30.467, -85.898 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam6" type="CSGBox" parent="Glass roof"]
+transform = Transform( -4.37114e-08, -0.5, -0.476314, 0, 0.866025, -0.275, 1, -2.18557e-08, -2.08203e-08, -10.7016, 37.5906, -25.1749 )
+depth = 42.3998
+material = SubResource( 10 )
 
-[node name="Cornor Piece8" type="CSGBox" parent="Celling"]
-transform = Transform( -0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 22.4495, 30.467, -65.308 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam7" type="CSGBox" parent="Glass roof"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.141693, 43.2513, -54.677 )
+depth = 61.2608
+material = SubResource( 10 )
 
-[node name="Cornor Piece9" type="CSGBox" parent="Celling"]
-transform = Transform( -0.173648, 0, 0.984807, 0, 1, 0, -0.984807, 0, -0.173648, -22.2769, 30.467, -43.4932 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam8" type="CSGBox" parent="Glass roof"]
+transform = Transform( -4.37114e-08, 0.5, 0.476314, 0, 0.866025, -0.275, -1, -2.18557e-08, -2.08203e-08, 10.4664, 37.5906, -84.471 )
+depth = 42.3998
+material = SubResource( 10 )
 
-[node name="Cornor Piece10" type="CSGBox" parent="Celling"]
-transform = Transform( -0.927184, 0, 0.374606, 0, 1, 0, -0.374606, 0, -0.927184, -7.67369, 30.467, -23.7372 )
-width = 19.3607
-depth = 10.3653
+[node name="Metal Beam9" type="CSGBox" parent="Glass roof"]
+transform = Transform( -4.37114e-08, -0.5, -0.476314, 0, 0.866025, -0.275, 1, -2.18557e-08, -2.08203e-08, -10.7016, 37.5906, -84.4464 )
+depth = 42.3998
+material = SubResource( 10 )
 
-[node name="Cornor Piece11" type="CSGBox" parent="Celling"]
-transform = Transform( 0.927184, 0, 0.374607, 0, 1, 0, -0.374607, 0, 0.927184, 9.58007, 30.467, -24.4453 )
-width = 19.3607
-depth = 10.3653
+[node name="Exterior Buildings" type="Node" parent="."]
 
-[node name="Cornor Piece12" type="CSGBox" parent="Celling"]
-transform = Transform( 0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, 22.4564, 30.467, -44.3398 )
-width = 19.3607
-depth = 10.3653
+[node name="Building" type="CSGBox" parent="Exterior Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37136, 47.7051, 141.753 )
+width = 171.572
+height = 122.371
+material = SubResource( 40 )
+
+[node name="Building2" type="CSGBox" parent="Exterior Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 159.512, 37.4272, -98.5937 )
+width = 171.572
+height = 80.7595
+depth = 185.061
+
+[node name="Building3" type="CSGBox" parent="Exterior Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -160.342, 37.4272, -98.5937 )
+width = 171.572
+height = 80.7595
+depth = 185.061
+
+[node name="Building4" type="CSGBox" parent="Exterior Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -194.557, 29.0317, 172.758 )
+width = 102.905
+height = 53.2566
+depth = 128.095
+material = SubResource( 41 )
+
+[node name="Building5" type="CSGBox" parent="Exterior Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 184.532, 28.9842, 172.758 )
+width = 102.905
+height = 53.2566
+depth = 128.095
+material = SubResource( 42 )
+
+[node name="Building6" type="CSGBox" parent="Exterior Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120.305, 129.612, 352.921 )
+width = 171.572
+height = 280.747
+depth = 160.766
+material = SubResource( 43 )
+
+[node name="Building7" type="CSGBox" parent="Exterior Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -127.942, 129.612, 344.947 )
+width = 171.572
+height = 280.747
+depth = 143.562
+material = SubResource( 44 )
