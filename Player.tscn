@@ -56,3 +56,7 @@ margin_right = 1025.0
 margin_bottom = 598.0
 text = "Ammo
 2/2"
+
+[node name="Bulletlabel" type="Label" parent="UI"]
+margin_right = 40.0
+margin_bottom = 14.0

@@ -5,14 +5,57 @@
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Camera.tscn" type="PackedScene" id=5]
 
-[sub_resource type="SpatialMaterial" id=6]
-albedo_color = Color( 0, 0, 0, 1 )
+[sub_resource type="SphereMesh" id=4]
+
+[sub_resource type="SphereShape" id=5]
 
 [sub_resource type="SpatialMaterial" id=11]
 albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
 
 [sub_resource type="SpatialMaterial" id=12]
 albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=28]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=29]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=31]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=32]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=33]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=25]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=26]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
+
+[sub_resource type="SpatialMaterial" id=27]
+albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
 
 [sub_resource type="SpatialMaterial" id=13]
 albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
@@ -38,54 +81,11 @@ albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
 [sub_resource type="SpatialMaterial" id=24]
 albedo_color = Color( 0.615686, 0.603922, 0.603922, 1 )
 
-[sub_resource type="SpatialMaterial" id=17]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=16]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=18]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=19]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=25]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=26]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=27]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=28]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=29]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=30]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=31]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=32]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
-[sub_resource type="SpatialMaterial" id=33]
-albedo_color = Color( 0.741176, 0.670588, 0.670588, 1 )
-
 [sub_resource type="SpatialMaterial" id=38]
 albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
 
 [sub_resource type="SpatialMaterial" id=39]
 albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
-
-[sub_resource type="SphereMesh" id=4]
-
-[sub_resource type="SphereShape" id=5]
 
 [sub_resource type="SpatialMaterial" id=7]
 flags_transparent = true
@@ -131,12 +131,6 @@ albedo_color = Color( 0.537255, 0.509804, 0.509804, 1 )
 
 [node name="TheGrandHeist" type="Spatial"]
 
-[node name="Camera" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0.395181, 15.0397, 32.3931 )
-
-[node name="Enemy" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32.6771, 4.07542, 36.2429 )
-
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.750616, 73.3657, -54.8713 )
 shadow_enabled = true
@@ -144,25 +138,26 @@ shadow_enabled = true
 [node name="KinematicBody" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.48075, 7.05367 )
 
-[node name="Outside flooring" type="Node" parent="."]
+[node name="Gold bar" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.23764, 6.01681, 46.0028 )
 
-[node name="Main Path" type="CSGBox" parent="Outside flooring"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 19.3811 )
-use_collision = true
-width = 600.0
-depth = 63.3839
+[node name="Enemie" type="StaticBody" parent="." groups=["Enimies"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6686, 7.4886, 6.52343 )
 
-[node name="road" type="CSGBox" parent="Outside flooring"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.370338, 68.9204 )
-width = 926.303
-depth = 36.6053
-material = SubResource( 6 )
+[node name="CSGMesh" type="CSGMesh" parent="Enemie"]
+mesh = SubResource( 4 )
 
-[node name="Exterior Path" type="CSGBox" parent="Outside flooring"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 218.931 )
-use_collision = true
-width = 600.0
-depth = 267.292
+[node name="CollisionShape" type="CollisionShape" parent="Enemie"]
+shape = SubResource( 5 )
+
+[node name="Enemie2" type="StaticBody" parent="." groups=["Enimies"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6686, 7.19087, 13.0608 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Enemie2"]
+mesh = SubResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Enemie2"]
+shape = SubResource( 5 )
 
 [node name="Flooring" type="Node" parent="."]
 
@@ -203,6 +198,122 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.8066, 13.9018, -65.2838 )
 use_collision = true
 width = 10.174
 depth = 67.8514
+
+[node name="Outside flooring" type="Node" parent="."]
+
+[node name="Main Path" type="CSGBox" parent="Outside flooring"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 19.3811 )
+use_collision = true
+width = 600.0
+depth = 63.3839
+
+[node name="road" type="CSGBox" parent="Outside flooring"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.370338, 68.9204 )
+width = 926.303
+depth = 36.6053
+material = SubResource( 6 )
+
+[node name="Exterior Path" type="CSGBox" parent="Outside flooring"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 218.931 )
+use_collision = true
+width = 600.0
+depth = 267.292
+
+[node name="Right wall" type="Node" parent="."]
+
+[node name="Right Wall" type="CSGBox" parent="Right wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.9589, 16.8527, -54.0506 )
+use_collision = true
+height = 29.2342
+depth = 90.3682
+material = SubResource( 17 )
+
+[node name="Front Right Wall" type="CSGBox" parent="Right wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.697, 16.838, 0.259 )
+use_collision = true
+height = 29.2342
+depth = 20.8496
+material = SubResource( 16 )
+
+[node name="Front Wall" type="Node" parent="."]
+
+[node name="Front Left Wall" type="CSGBox" parent="Front Wall"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -31.729, 16.838, -9.866 )
+use_collision = true
+height = 29.2342
+depth = 35.3207
+material = SubResource( 28 )
+
+[node name="Front Right Wall" type="CSGBox" parent="Front Wall"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 30.3731, 16.838, -9.86252 )
+use_collision = true
+height = 29.2342
+depth = 35.3207
+material = SubResource( 29 )
+
+[node name="FFront Left Wall" type="CSGBox" parent="Front Wall"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.982, 16.8377, 9.68174 )
+use_collision = true
+height = 29.2342
+depth = 5.69004
+material = SubResource( 30 )
+
+[node name="FFront Right Wall" type="CSGBox" parent="Front Wall"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.85, 16.841, 9.682 )
+use_collision = true
+height = 29.2342
+depth = 5.69004
+material = SubResource( 31 )
+
+[node name="FFront Top Wall" type="CSGBox" parent="Front Wall"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.526, 28.717, 9.682 )
+use_collision = true
+height = 5.47677
+depth = 17.1532
+material = SubResource( 32 )
+
+[node name="FFront Bottom Wall" type="CSGBox" parent="Front Wall"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.535197, 14.1525, 9.6247 )
+use_collision = true
+height = 5.47677
+depth = 17.1532
+material = SubResource( 33 )
+
+[node name="Left wall" type="Node" parent="."]
+
+[node name="Left Wall" type="CSGBox" parent="Left wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.1233, 16.8377, -54.0559 )
+use_collision = true
+height = 29.2342
+depth = 90.3682
+material = SubResource( 18 )
+
+[node name="Front Left Wall" type="CSGBox" parent="Left wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6789, 16.8377, -0.151954 )
+use_collision = true
+height = 29.2342
+depth = 21.6322
+material = SubResource( 19 )
+
+[node name="Back Wall" type="Node" parent="."]
+
+[node name="Rightwall" type="CSGBox" parent="Back Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.502, 16.8507, -100.181 )
+width = 39.0
+height = 29.234
+material = SubResource( 25 )
+
+[node name="Leftwall" type="CSGBox" parent="Back Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30.6304, 16.8357, -100.289 )
+width = 39.0
+height = 29.234
+material = SubResource( 26 )
+
+[node name="Middle wall" type="CSGBox" parent="Back Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.474796, 20.6062, -100.2 )
+width = 25.209
+height = 21.7248
+material = SubResource( 27 )
 
 [node name="Front Area" type="Node" parent="."]
 
@@ -262,116 +373,6 @@ width = 29.4044
 depth = 29.138
 material = SubResource( 24 )
 
-[node name="Right wall" type="Node" parent="."]
-
-[node name="Right Wall" type="CSGBox" parent="Right wall"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.9589, 16.8527, -54.0506 )
-use_collision = true
-height = 29.2342
-depth = 90.3682
-material = SubResource( 17 )
-
-[node name="Front Right Wall" type="CSGBox" parent="Right wall"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.697, 16.838, 0.259 )
-use_collision = true
-height = 29.2342
-depth = 20.8496
-material = SubResource( 16 )
-
-[node name="Left wall" type="Node" parent="."]
-
-[node name="Left Wall" type="CSGBox" parent="Left wall"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.1233, 16.8377, -54.0559 )
-use_collision = true
-height = 29.2342
-depth = 90.3682
-material = SubResource( 18 )
-
-[node name="Front Left Wall" type="CSGBox" parent="Left wall"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6789, 16.8377, -0.151954 )
-use_collision = true
-height = 29.2342
-depth = 21.6322
-material = SubResource( 19 )
-
-[node name="Back Wall" type="Node" parent="."]
-
-[node name="Rightwall" type="CSGBox" parent="Back Wall"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.502, 16.8507, -100.181 )
-width = 39.0
-height = 29.234
-material = SubResource( 25 )
-
-[node name="Leftwall" type="CSGBox" parent="Back Wall"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30.6304, 16.8357, -100.289 )
-width = 39.0
-height = 29.234
-material = SubResource( 26 )
-
-[node name="Middle wall" type="CSGBox" parent="Back Wall"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.474796, 20.6062, -100.2 )
-width = 25.209
-height = 21.7248
-material = SubResource( 27 )
-
-[node name="Front Wall" type="Node" parent="."]
-
-[node name="Front Left Wall" type="CSGBox" parent="Front Wall"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -31.729, 16.838, -9.866 )
-use_collision = true
-height = 29.2342
-depth = 35.3207
-material = SubResource( 28 )
-
-[node name="Front Right Wall" type="CSGBox" parent="Front Wall"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 30.373, 16.838, -9.86 )
-use_collision = true
-height = 29.2342
-depth = 35.3207
-material = SubResource( 29 )
-
-[node name="FFront Left Wall" type="CSGBox" parent="Front Wall"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.982, 16.8377, 9.68174 )
-use_collision = true
-height = 29.2342
-depth = 5.69004
-material = SubResource( 30 )
-
-[node name="FFront Right Wall" type="CSGBox" parent="Front Wall"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.85, 16.841, 9.682 )
-use_collision = true
-height = 29.2342
-depth = 5.69004
-material = SubResource( 31 )
-
-[node name="FFront Top Wall" type="CSGBox" parent="Front Wall"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.526, 28.717, 9.682 )
-use_collision = true
-height = 5.47677
-depth = 17.1532
-material = SubResource( 32 )
-
-[node name="FFront Bottom Wall" type="CSGBox" parent="Front Wall"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.535197, 14.1525, 9.6247 )
-use_collision = true
-height = 5.47677
-depth = 17.1532
-material = SubResource( 33 )
-
-[node name="Stairs" type="Node" parent="."]
-
-[node name="side stairs right" type="CSGBox" parent="Stairs"]
-transform = Transform( -5.37094e-08, 2.50718e-08, 1, 0.860365, 0.819152, 0, -1.22873, 0.573577, -4.37114e-08, 42.8932, 8.51824, -24.0256 )
-use_collision = true
-width = 12.9473
-depth = 8.3089
-
-[node name="side stairs left" type="CSGBox" parent="Stairs"]
-transform = Transform( -5.37094e-08, 2.50718e-08, 1, 0.860365, 0.819152, 0, -1.22873, 0.573577, -4.37114e-08, -43.9361, 8.53022, -24.0523 )
-use_collision = true
-width = 12.9473
-depth = 8.3089
-
 [node name="Decoration" type="Node" parent="."]
 
 [node name="Pillars holding 2nd2" type="CSGCylinder" parent="Decoration"]
@@ -386,26 +387,19 @@ use_collision = true
 height = 10.1218
 material = SubResource( 39 )
 
-[node name="Gold bar" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.23764, 6.01681, 46.0028 )
+[node name="Stairs" type="Node" parent="."]
 
-[node name="Enemie" type="StaticBody" parent="." groups=["Enimies"]]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6686, 7.4886, 6.52343 )
+[node name="side stairs right" type="CSGBox" parent="Stairs"]
+transform = Transform( -5.37094e-08, 2.50718e-08, 1, 0.860365, 0.819152, 0, -1.22873, 0.573577, -4.37114e-08, 42.8932, 8.51824, -24.0256 )
+use_collision = true
+width = 12.9473
+depth = 8.3089
 
-[node name="CSGMesh" type="CSGMesh" parent="Enemie"]
-mesh = SubResource( 4 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Enemie"]
-shape = SubResource( 5 )
-
-[node name="Enemie2" type="StaticBody" parent="." groups=["Enimies"]]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6686, 7.19087, 13.0608 )
-
-[node name="CSGMesh" type="CSGMesh" parent="Enemie2"]
-mesh = SubResource( 4 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Enemie2"]
-shape = SubResource( 5 )
+[node name="side stairs left" type="CSGBox" parent="Stairs"]
+transform = Transform( -5.37094e-08, 2.50718e-08, 1, 0.860365, 0.819152, 0, -1.22873, 0.573577, -4.37114e-08, -43.9361, 8.53022, -24.0523 )
+use_collision = true
+width = 12.9473
+depth = 8.3089
 
 [node name="Barriers" type="Node" parent="."]
 
@@ -550,3 +544,76 @@ width = 171.572
 height = 280.747
 depth = 143.562
 material = SubResource( 44 )
+
+[node name="Camera\'s" type="Node" parent="."]
+
+[node name="Camera" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0.395181, 15.0397, 7.74849 )
+
+[node name="Camera2" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( -0.0118505, -0.499965, 0.865964, 0, 0.866025, 0.5, -0.99993, 0.00592524, -0.0102628, 46.3841, 15.0397, -13.7423 )
+
+[node name="Camera3" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( -0.00652754, 0.499989, -0.866007, 0, 0.866025, 0.5, 0.999979, 0.00326377, -0.00565301, -47.3472, 15.0397, -13.3652 )
+
+[node name="Camera4" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.00464255, 0.499995, -0.866016, 0, 0.866025, 0.5, 0.999989, -0.00232127, 0.00402056, -47.2396, 24.8891, -90.7542 )
+
+[node name="Camera5" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( -0.999997, -0.00127409, 0.00220679, 0, 0.866025, 0.5, -0.00254818, 0.499998, -0.866022, -40.4213, 24.8891, -98.5316 )
+
+[node name="Camera6" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( -0.999997, -0.00127409, 0.00220679, 0, 0.866025, 0.5, -0.00254818, 0.499998, -0.866022, 38.8587, 24.8891, -98.5316 )
+
+[node name="Camera7" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.0364169, -0.499668, 0.865451, 0, 0.866025, 0.5, -0.999337, -0.0182085, 0.031538, 46.0413, 24.8891, -91.2138 )
+
+[node name="Camera8" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( -0.999997, -0.00127409, 0.00220679, 0, 0.866025, 0.5, -0.00254818, 0.499998, -0.866022, -0.458548, 24.8891, -98.5316 )
+
+[node name="Camera9" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 19.6725, 15.0397, -11.4556 )
+
+[node name="Camera10" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, -17.5137, 15.0397, -11.4556 )
+
+[node name="Camera11" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.727078, -0.343277, 0.594574, 0, 0.866025, 0.5, -0.686555, -0.363539, 0.629668, 12.4987, 15.0397, -11.4342 )
+
+[node name="Camera12" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.680056, 0.36658, -0.634935, 0, 0.866025, 0.5, 0.73316, -0.340028, 0.588945, -12.0154, 15.0397, -11.3018 )
+
+[node name="Camera13" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( -0.999994, 0.00171919, -0.00297772, 0, 0.866025, 0.5, 0.00343838, 0.499997, -0.86602, -0.181804, 14.3805, -35.6474 )
+
+[node name="Camera14" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.0364169, -0.499668, 0.865451, 0, 0.866025, 0.5, -0.999337, -0.0182085, 0.031538, 46.0413, 24.8891, -63.9636 )
+
+[node name="Camera15" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.00464255, 0.499995, -0.866016, 0, 0.866025, 0.5, 0.999989, -0.00232127, 0.00402056, -47.2396, 24.8891, -64.4449 )
+
+[node name="Camera16" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.0364169, -0.499668, 0.865451, 0, 0.866025, 0.5, -0.999337, -0.0182085, 0.031538, 46.0413, 12.0675, -32.5433 )
+
+[node name="Camera17" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( 0.00464255, 0.499995, -0.866016, 0, 0.866025, 0.5, 0.999989, -0.00232127, 0.00402056, -47.2396, 11.7998, -31.8567 )
+
+[node name="Camera18" parent="Camera\'s" instance=ExtResource( 5 )]
+transform = Transform( -0.999994, 0.00171919, -0.00297772, 0, 0.866025, 0.5, 0.00343838, 0.499997, -0.86602, -0.181804, 10.7433, -98.4481 )
+
+[node name="Annoyers" type="Node" parent="."]
+
+[node name="Enemy" parent="Annoyers" instance=ExtResource( 4 )]
+transform = Transform( 0.00429362, 0, -0.999991, 0, 1, 0, 0.999991, 0, 0.00429362, -10.5935, 4.07542, 26.2301 )
+
+[node name="Enemy2" parent="Annoyers" instance=ExtResource( 4 )]
+transform = Transform( -0.00925014, 0, 0.999957, 0, 1, 0, -0.999957, 0, -0.00925014, 10.578, 4.07542, 26.2301 )
+
+[node name="Enemy3" parent="Annoyers" instance=ExtResource( 4 )]
+transform = Transform( 0.00429362, 0, -0.999991, 0, 1, 0, 0.999991, 0, 0.00429362, -44.7974, 6.4836, -13.5321 )
+
+[node name="Enemy4" parent="Annoyers" instance=ExtResource( 4 )]
+transform = Transform( 0.0077666, 0, 0.99997, 0, 1, 0, -0.99997, 0, 0.0077666, 43.9561, 6.4836, -13.5321 )
+
+[node name="Enemy5" parent="Annoyers" instance=ExtResource( 4 )]
+transform = Transform( -0.999814, 0, 0.0192846, 0, 1, 0, -0.0192846, 0, -0.999814, 0.105741, 6.4836, -37.852 )
