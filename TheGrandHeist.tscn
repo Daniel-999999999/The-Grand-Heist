@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Gold bar.tscn" type="PackedScene" id=3]
@@ -86,6 +86,9 @@ albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
 
 [sub_resource type="SpatialMaterial" id=39]
 albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
+
+[sub_resource type="SpatialMaterial" id=45]
+albedo_color = Color( 0.262745, 0.262745, 0.262745, 1 )
 
 [sub_resource type="SpatialMaterial" id=7]
 flags_transparent = true
@@ -202,10 +205,10 @@ depth = 67.8514
 [node name="Outside flooring" type="Node" parent="."]
 
 [node name="Main Path" type="CSGBox" parent="Outside flooring"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 19.3811 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, -22.7918 )
 use_collision = true
 width = 600.0
-depth = 63.3839
+depth = 150.429
 
 [node name="road" type="CSGBox" parent="Outside flooring"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.370338, 68.9204 )
@@ -386,6 +389,18 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5076, 8.26911, -45.3491 )
 use_collision = true
 height = 10.1218
 material = SubResource( 39 )
+
+[node name="elevator door" type="CSGBox" parent="Decoration"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.1875, 7.88579, -110.309 )
+height = 8.55639
+depth = 3.75116
+material = SubResource( 45 )
+
+[node name="elevator door2" type="CSGBox" parent="Decoration"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.1854, 7.90426, -114.144 )
+height = 8.55639
+depth = 3.75116
+material = SubResource( 45 )
 
 [node name="Stairs" type="Node" parent="."]
 
@@ -617,3 +632,135 @@ transform = Transform( 0.0077666, 0, 0.99997, 0, 1, 0, -0.99997, 0, 0.0077666, 4
 
 [node name="Enemy5" parent="Annoyers" instance=ExtResource( 4 )]
 transform = Transform( -0.999814, 0, 0.0192846, 0, 1, 0, -0.0192846, 0, -0.999814, 0.105741, 6.4836, -37.852 )
+
+[node name="Valut Area" type="Node" parent="."]
+
+[node name="main stiar" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 0.819152, 0.573577, 0, -0.573577, 0.819152, -0.57423, -7.79264, -138.339 )
+use_collision = true
+width = 21.0416
+depth = 38.7441
+
+[node name="stair bit" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.609449, -19.1059, -161.29 )
+use_collision = true
+width = 63.2065
+depth = 13.1046
+
+[node name="side stair" type="CSGBox" parent="Valut Area"]
+transform = Transform( -1, 5.01437e-08, -7.16125e-08, 0, 0.819152, 0.573577, 8.74228e-08, 0.573577, -0.819152, -21.6541, -30.0687, -139.502 )
+use_collision = true
+width = 21.0416
+depth = 38.7441
+
+[node name="side stair2" type="CSGBox" parent="Valut Area"]
+transform = Transform( -1, 5.01437e-08, -7.16125e-08, 0, 0.819152, 0.573577, 8.74228e-08, 0.573577, -0.819152, 20.5162, -30.0687, -139.502 )
+use_collision = true
+width = 21.0416
+depth = 38.7441
+
+[node name="Floor" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.609449, -40.6476, -116.046 )
+use_collision = true
+width = 63.2065
+depth = 365.085
+
+[node name="stair bit2" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.609449, 3.12626, -109.073 )
+use_collision = true
+width = 63.2065
+depth = 27.8345
+
+[node name="left wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.8325, -29.0825, -110.185 )
+height = 60.3249
+depth = 355.843
+
+[node name="Right wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.9394, -28.3789, -110.185 )
+height = 58.9595
+depth = 356.797
+
+[node name="Back Wal" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -29.5892, -168.672 )
+width = 63.7921
+height = 66.6195
+
+[node name="Top left wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.8536, 10.0069, -142.333 )
+height = 21.5069
+depth = 82.7718
+
+[node name="Top right wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.9617, 10.0069, -142.333 )
+height = 21.5069
+depth = 82.7718
+
+[node name="Top back wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.76701, -168.682 )
+width = 69.4455
+height = 27.9496
+
+[node name="Top roof" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000277519, 21.4873, -147.596 )
+width = 69.4047
+depth = 93.718
+
+[node name="Vault wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4371, -29.5892, -52.0797 )
+width = 29.0867
+height = 66.6195
+
+[node name="Vault wall2" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.902, -29.5892, -52.074 )
+width = 31.9194
+height = 66.6195
+
+[node name="Vault door" type="CSGCylinder" parent="Valut Area"]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 8.91232, -32.7903, -61.9306 )
+radius = 9.81796
+height = 1.24696
+
+[node name="TOPPER PART" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.6265, -52.1082 )
+width = 41.9614
+height = 24.1787
+
+[node name="Vault Wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( 0.927184, -0.374607, 0, 0.374607, 0.927184, 0, 0, 0, 1, 11.7481, -27.5683, -52.0764 )
+width = 7.61096
+height = 9.04771
+
+[node name="Vault Wall2" type="CSGBox" parent="Valut Area"]
+transform = Transform( 0.422618, -0.906308, 0, 0.906308, 0.422618, 0, 0, 0, 1, 5.16389, -21.3167, -52.0723 )
+width = 7.61096
+height = 15.2346
+
+[node name="Vault Wall3" type="CSGBox" parent="Valut Area"]
+transform = Transform( -0.374607, -0.927184, 0, 0.927184, -0.374607, 0, 0, 0, 1, -6.4182, -21.6424, -52.0942 )
+width = 7.61096
+height = 15.2346
+
+[node name="Vault Wall4" type="CSGBox" parent="Valut Area"]
+transform = Transform( -0.920505, -0.390731, 0, 0.390731, -0.920505, 0, 0, 0, 1, -11.017, -25.8611, -52.1005 )
+width = 7.61096
+height = 15.2346
+
+[node name="Vault Wall5" type="CSGBox" parent="Valut Area"]
+transform = Transform( -0.939692, 0.34202, 0, -0.34202, -0.939692, 0, 0, 0, 1, -12.3328, -35.9416, -52.1005 )
+width = 7.61096
+height = 15.2346
+
+[node name="Vault Wall6" type="CSGBox" parent="Valut Area"]
+transform = Transform( -0.920505, -0.390731, 0, 0.390731, -0.920505, 0, 0, 0, 1, 11.0275, -39.5644, -52.1005 )
+width = 7.61096
+height = 15.2346
+
+[node name="door ledge" type="CSGBox" parent="Valut Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.216, -37.8304, -53.1375 )
+height = 19.623
+
+[node name="BBack Wall" type="CSGBox" parent="Valut Area"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -32.8325, -29.0072, 47.166 )
+height = 60.3249
+depth = 355.843
