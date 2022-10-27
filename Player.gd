@@ -1,8 +1,8 @@
 extends KinematicBody
 
 #mainPhysics
-var movementSpeed = 6
-var jumpStrength = 7
+var movementSpeed = 10
+var jumpStrength = 15
 var gravity = 50
 #camera
 var minCamVerticalAngle = -90.0
@@ -64,9 +64,9 @@ func _physics_process (delta):
 		input.x += 1
 	
 	if Input.is_action_pressed("run"):
-		movementSpeed = 15
+		movementSpeed = 25
 	else:
-		movementSpeed = 10
+		movementSpeed = 15
 	
 	input = input.normalized()
 	var forward = global_transform.basis.z

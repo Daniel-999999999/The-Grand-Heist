@@ -1,0 +1,956 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.752941, 0.74902, 0.74902, 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.670588, 0.639216, 0.639216, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[node name="safe Deposit" type="Spatial"]
+
+[node name="Mainbox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.362745, 2.55897, 0 )
+use_collision = true
+width = 7.13097
+height = 4.42019
+depth = 1.42238
+material = SubResource( 1 )
+
+[node name="Locker" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.29032, 4.19395, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.29032, 3.20385, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker2/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker2/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker2/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker2/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker2/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker3" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.29032, 2.18639, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker3/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker3/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker3/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker3/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker3/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker4" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.29032, 1.19066, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker4/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker4/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker4/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker4/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker4/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker5" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.09555, 4.19395, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker5/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker5/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker5/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker5/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker5/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker6" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.910883, 4.19395, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker6/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker6/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker6/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker6/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker6/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker7" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.221958, 4.19395, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker7/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker7/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker7/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker7/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker7/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker8" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35254, 4.19395, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker8/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker8/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker8/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker8/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker8/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker9" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.487, 4.19395, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker9/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker9/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker9/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker9/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker9/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker10" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07994, 3.20385, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker10/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker10/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker10/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker10/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker10/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker11" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.905951, 3.20385, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker11/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker11/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker11/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker11/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker11/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker12" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.242693, 3.20385, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker12"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker12/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker12/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker12/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker12/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker12/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker13" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36236, 3.20385, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker13"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker13/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker13/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker13/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker13/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker13/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker14" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49187, 3.20385, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker14"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker14/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker14/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker14/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker14/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker14/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker15" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08237, 2.18639, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker15"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker15/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker15/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker15/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker15/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker15/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker16" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.909366, 2.18639, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker16"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker16/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker16/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker16/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker16/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker16/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker17" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.247442, 2.18639, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker17"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker17/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker17/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker17/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker17/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker17/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker18" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.37089, 2.18639, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker18"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker18/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker18/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker18/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker18/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker18/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker19" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47831, 2.18639, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker19"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker19/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker19/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker19/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker19/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker19/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker20" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07319, 1.19066, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker20"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker20/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker20/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker20/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker20/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker20/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker21" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.900053, 1.19066, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker21"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker21/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker21/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker21/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker21/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker21/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker22" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.244117, 1.19066, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker22"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker22/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker22/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker22/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker22/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker22/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker23" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.37701, 1.19066, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker23"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23243, -4.19032, -0.281393 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker23/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker23/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker23/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker23/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker23/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
+
+[node name="Locker24" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48014, 1.19066, 0.277073 )
+width = 1.03662
+height = 0.90216
+depth = 0.896862
+material = SubResource( 2 )
+
+[node name="Handle & Lock" type="CSGCombiner" parent="Locker24"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23268, -4.19032, -0.281325 )
+
+[node name="CSGBox" type="CSGBox" parent="Locker24/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 3.91532, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox2" type="CSGBox" parent="Locker24/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95608, 4.48501, 0.656852 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGBox3" type="CSGBox" parent="Locker24/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.95608, 4.23861, 0.886281 )
+width = 0.140282
+height = 0.112418
+depth = 0.572705
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Locker24/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.700586 )
+radius = 0.070321
+height = 0.140243
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Locker24/Handle & Lock"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.79538, 4.04668, 0.702282 )
+radius = 0.0471137
+height = 0.140243
+material = SubResource( 3 )
