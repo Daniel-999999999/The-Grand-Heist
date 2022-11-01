@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Pathing.jpg-071e707972ab0c2fdb23a762f638b710.stex"
+path="res://.import/M2.jpg-6086b038a2ff4c289e784857a7cb8e62.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pathing.jpg"
-dest_files=[ "res://.import/Pathing.jpg-071e707972ab0c2fdb23a762f638b710.stex" ]
+source_file="res://models/18-1911a1/75-round-marble-table-coffee/MAP/M2.jpg"
+dest_files=[ "res://.import/M2.jpg-6086b038a2ff4c289e784857a7cb8e62.stex" ]
 
 [params]
 

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/MARBLE TABLE.obj-7091feb643b1c5b3598bc46e26302ed1.mesh"
+
+[deps]
+
+files=[ "res://.import/MARBLE TABLE.obj-7091feb643b1c5b3598bc46e26302ed1.mesh" ]
+
+source_file="res://models/18-1911a1/75-round-marble-table-coffee/OBJ/MARBLE TABLE.obj"
+dest_files=[ "res://.import/MARBLE TABLE.obj-7091feb643b1c5b3598bc46e26302ed1.mesh", "res://.import/MARBLE TABLE.obj-7091feb643b1c5b3598bc46e26302ed1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
