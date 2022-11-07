@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Player's/Player.tscn" type="PackedScene" id=1]
+
+[node name="711" type="Spatial"]
+
+[node name="KinematicBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.67123, 8.47595 )
+
+[node name="Bulding" type="Node" parent="."]
+
+[node name="Floor" type="CSGBox" parent="Bulding"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00606298, -0.042511, -7.84384 )
+use_collision = true
+width = 19.9953
+height = 0.126337
+depth = 17.8701
+
+[node name="Exterior" type="Node" parent="."]
+
+[node name="Pathing" type="CSGBox" parent="Exterior"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00606298, -0.664718, -3.23499 )
+use_collision = true
+width = 67.8697
+height = 1.13014
+depth = 28.4474
+
+[node name="Pathing2" type="CSGBox" parent="Exterior"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00606298, -0.913201, 16.3755 )
+use_collision = true
+width = 67.8697
+height = 0.126337
+depth = 28.4474

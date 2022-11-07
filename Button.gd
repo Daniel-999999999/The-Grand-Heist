@@ -26,4 +26,4 @@ func _on_Options_button_pressed():
 
 
 func _on_Big_Bio_Bank_Play_pressed():
-	get_tree().change_scene("res://BigBoiBank.tscn")
+	get_tree().change_scene("res://Heist's/BigBoiBank.tscn")

@@ -16,7 +16,7 @@ var mouseDelta : Vector2 = Vector2()
 #player components
 onready var camera = get_node("Camera")
 
-onready var bulletScene = preload("res://Bullet.tscn")
+onready var bulletScene = preload("res://models/Bullet.tscn")
 onready var bulletSpawn = get_node("Camera/bulletSpawn") 
  #Called when the node enters the scene tree for the first time.	
 func _input (event):
@@ -25,7 +25,7 @@ func _input (event):
 		if event.is_action_pressed("Primary Fire"):
 			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-				if event.is_action_pressed("esc"):
+				if event.is_action_pressed("pause"):
 					Input.event.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 					if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 						if event is InputEventMouseMotion:
@@ -45,8 +45,10 @@ func Primary_Fire ():
 	get_node("/root/TheGrandHeist").add_child(bullet)
 	bullet.global_transform = bulletSpawn.global_transform
 	bullet.scale = Vector3(0.1,0.1,0.1)
-	
-	
+	else:
+	get_node("/root/711").add_child(bullet)
+	bullet.global_transform = bulletSpawn.global_transform
+	bullet.scale = Vector3(0.1,0.1,0.1)
 	
 func _physics_process (delta):
 	var input = Vector2()

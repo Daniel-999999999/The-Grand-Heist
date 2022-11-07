@@ -17,4 +17,12 @@ func _ready():
 
 
 func _on_TextureButton_pressed():
-	get_tree().change_scene("res://Big Boi Bank info.tscn")
+	get_tree().change_scene("res://Heist's info/Big Boi Bank info.tscn")
+
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Menus/Main Menu.tscn")
+
+
+func _on_711_pressed():
+	get_tree().change_scene("res://Heist's/711.tscn")

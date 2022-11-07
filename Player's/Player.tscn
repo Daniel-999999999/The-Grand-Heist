@@ -4,7 +4,7 @@
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://weapon.gd" type="Script" id=3]
 [ext_resource path="res://Textures/crosshair.png" type="Texture" id=4]
-[ext_resource path="res://1911 Pistol.tscn" type="PackedScene" id=5]
+[ext_resource path="res://models/1911 Pistol.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.75
@@ -45,6 +45,7 @@ transform = Transform( -0.999996, -0.00289724, -8.74226e-08, -0.00289724, 0.9999
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 0.75, 0, 0, 0, -3.27835e-08, -1.811, 0, 0.75, -7.91613e-08, 0, 0, 0 )
 mesh = SubResource( 2 )
+material/0 = null
 
 [node name="Deagle" type="Node" parent="."]
 script = ExtResource( 3 )

@@ -17,10 +17,10 @@ func _ready():
 
 
 func _on_PlayButton_pressed():
-	get_tree().change_scene("res://Heist select.tscn")
+	get_tree().change_scene("res://Menus/Heist select.tscn")
 
 func _on_optionButton_pressed():
-	get_tree().change_scene("res://Options Menu.tscn")
+	get_tree().change_scene("res://Menus/Options Menu.tscn")
 
 
 func _on_Quit_Button_pressed():
