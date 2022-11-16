@@ -45,10 +45,10 @@ func Primary_Fire ():
 	get_node("/root/TheGrandHeist").add_child(bullet)
 	bullet.global_transform = bulletSpawn.global_transform
 	bullet.scale = Vector3(0.1,0.1,0.1)
-	else:
-	get_node("/root/711").add_child(bullet)
-	bullet.global_transform = bulletSpawn.global_transform
-	bullet.scale = Vector3(0.1,0.1,0.1)
+#	else:
+	#get_node("/root/711").add_child(bullet)
+	#bullet.global_transform = bulletSpawn.global_transform
+	#bullet.scale = Vector3(0.1,0.1,0.1)
 	
 func _physics_process (delta):
 	var input = Vector2()
